@@ -1,0 +1,15 @@
+[Unit]
+Description=packet forwarder
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Restart=always
+RestartSec=30
+WorkingDirectory=/home/pi/lora/picoGW_packet_forwarder/lora_pkt_fwd
+ExecStartPre=/home/pi/lora/picoGW_packet_forwarder/reset.sh start
+ExecStart=/home/pi/lora/picoGW_packet_forwarder/lora_pkt_fwd/lora_pkt_fwd
+ExecStopPost=/home/pi/lora/picoGW_packet_forwarder/reset.sh stop
+
+[Install]
+WantedBy=multi-user.target
