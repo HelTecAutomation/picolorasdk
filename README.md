@@ -1,5 +1,5 @@
-# lorasdk
-Scripts and files for LoRa gateway produced by Heltec automation(TM). This file should work with raspberry pi.
+# picolorasdk
+Scripts and files for LoRa pico gateway produced by Heltec automation(TM). This file should work with raspberry pi.
 
 ## install
 - connect HT-M01 to raspberry Pi via USB;
