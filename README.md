@@ -3,11 +3,11 @@ Scripts and files for LoRa gateway produced by Heltec automation(TM). This file 
 
 ## install
 - connect HT-M01 to raspberry Pi via USB;
-- clone this project into raspberry pi, and lorasdk and packet_forwarder should in a same folder. e.g. 
+- clone this project into raspberry pi, and picolorasdk and picoGW_packet_forwarder should in a same folder. e.g. 
 ![image](route.jpg)
 
   ```bash
-  cd /home/pi/lora/lorasdk
+  cd /home/pi/lora/picolorasdk
   chmod +x install.sh
   ./install.sh
   ```
